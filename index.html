@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Shop</title>
+    <style>   
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&display=swap');
+        *{
+            margin: 1;
+            padding:0;
+            box-sizing: border-box;
+            font-weight: bold;
+            color:antiquewhite;
+        }
+        body{
+            font-family: 'Montserrat Subrayada', sans-serif;
+            background-color:rgb(86, 84, 95);
+        }
+        header{
+            height: 70px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-bottom: 2px solid black ;
+        }
+        ul{
+            display: flex;
+            list-style-type: none;
+        }
+        ul li a{
+            margin: 0 5px;
+            border: 2px solid black;
+            padding: 5px 10px;
+            text-decoration: none;
+            border-radius: 50px ;
+        }
+        .logo{
+            border: 2px solid black;
+            padding: 10px 10px;
+        }
+        .signup{
+            background-color: antiquewhite;
+            color: black;
+        }
+        .signup:hover{
+            background-color: black;
+            color: antiquewhite;
+        }
+        main{
+            display:flex;
+            height: 90vh;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 0px 150px;
+            flex-wrap: wrap;
+        }
+        main h2{
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+        main p{
+            font-size: 15px;
+            font-weight: 200;
+            line-height: 31.5px;
+            margin: 30px 0px;
+        }
+        .contentleft{
+            flex:1
+        }
+        .contentmid{
+            flex:2
+        }
+        .contentright{
+            flex:1
+        }
+        .merc{
+            max-width:500px;
+            height:auto;
+        }
+        .btn{
+            padding: 15px 30px;
+            background:aliceblue ;
+            outline: none;
+            border: none;
+            color: black;
+            border-radius: 50px;
+            font-size: 700;
+        }
+        .btn:hover{
+            background-color: antiquewhite;
+       color: black;
+       border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <nav>
+            <ul>
+                <li><a href ="#">Home</a></li>
+                <li><a href ="#">Offers</a></li>
+                <li><a href ="#">Buy Now</a></li>
+                <li><a href ="#">Sell Now</a></li>
+                <li><a href ="#">About Us</a></li>
+                <li><a href ="https://www.google.com/search?q=sarkari+result&oq=s&gs_lcrp=EgZjaHJvbWUqDQgBEAAYgwEYsQMYgAQyBggAEEUYOTINCAEQABiDARixAxiABDITCAIQLhiDARjHARixAxjRAxiABDINCAMQABiDARixAxiABDINCAQQABiDARixAxiABDINCAUQABiDARixAxiABDINCAYQABiDARixAxiABDITCAcQLhiDARjHARixAxjRAxiABDIHCAgQABiABDINCAkQABiDARixAxiABNIBCTcyODhqMGoxNagCCLACAQ&sourceid=chrome&ie=UTF-8" class="signup">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+         <div class="contentleft">
+            <h2>Mercury</h2>
+         </div>
+         <div class="contentmid">
+            <p>Mercury is the closest planet to the sun and also the smallest planet in the solar system. The small and cratered planet does not have any moons and zips around the sun faster than any other planet in the solar system, hence why the Romans named it after their swift-footed messenger god.<br>
+                <li>Distance from Sun: 58 million km</li>
+                <li>Orbital period: 88 days</li>
+                <li>Radius: 2,439.7 km</li>
+                <li>  Gravity: 3.7 m/s²</li>
+                <li>Length of day: 59d 0h 0m</li>
+                <li> Mass: 3.285 × 10^23 kg (0.055 M⊕)</li>
+                <li>Surface area: 74.8 million km²</li>
+            </p>
+            <button class="btn">Buy Now</button>
+         </div>
+         <div class="contentright">
+              <img src="mercury.jpg"class="merc">
+         </div>
+    </main>
+</body>
+</html>
